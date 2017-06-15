@@ -13,11 +13,8 @@ class Ubiq < Formula
   def install
     ENV["GOROOT"] = "#{HOMEBREW_PREFIX}/opt/go/libexec"
     system "go", "env" # Debug env
-    system "make", "all"
-    bin.install 'build/bin/evm'
+    system "make", "gubiq"
     bin.install 'build/bin/gubiq'
-    bin.install 'build/bin/rlpdump'
-    bin.install 'build/bin/puppeth'
   end
 
   test do
@@ -39,8 +36,8 @@ class Ubiq < Formula
         <integer>300</integer>
         <key>ProgramArguments</key>
         <array>
-            <string>#{opt_bin}/geth</string>
-            <string>-datadir=#{prefix}/.ethereum</string>
+            <string>#{opt_bin}/gubiq</string>
+            <string>-datadir=#{prefix}/.gubiq</string>
         </array>
         <key>WorkingDirectory</key>
         <string>#{HOMEBREW_PREFIX}</string>
