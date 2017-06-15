@@ -1,7 +1,7 @@
-homebrew-ethereum
-=================
+homebrew-ubiq
+=============
 
-Homebrew Tap for Ethereum
+Homebrew Tap for Ubiq
 
 ## Installation
 
@@ -13,13 +13,6 @@ brew tap ethereum/ethereum
 ```
 brew install ethereum
 ```
-
-### C++ client
-```
-brew install cpp-ethereum
-brew linkapps cpp-ethereum
-```
-
 ## Running
 
 ### Go client
