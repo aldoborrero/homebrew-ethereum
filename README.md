@@ -23,7 +23,7 @@ Get the latest development version with the `--devel` flag. Use `--build-from-so
 
 ### Go client
 ```
-brew reinstall ethereum --devel
+brew reinstall ubiq --devel
 ```
 
 ### Current branches
